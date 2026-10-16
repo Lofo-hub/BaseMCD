@@ -16,4 +16,5 @@ INSERT INTO plat (nom_plat, prix) VALUES ('Soupe chinoise', 5000);
 INSERT INTO plat (nom_plat, prix) VALUES ('Mofo gasy (les 4)', 1000);
 INSERT INTO plat (nom_plat, prix) VALUES ('Ranon ampango', 500);
 
+
 -> Je choisis INT pour le prix et SERIAL pour l'identifiant.
