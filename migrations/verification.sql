@@ -16,3 +16,11 @@ from commande c
 join commandeDetail cd on c.id_commande = cd.id_commande 
 join plat p on cd.id_plat = p.id_plat 
 group by c.id_commande;
+
+
+Etape 4 
+Select c.id_commande, COALESCE(cl.nom_client , 'client de passage') AS nom_client 
+from commande c 
+left join client cl on c.id_client = cl.id_client
+GROUP BY c.id_commande, cl.nom_client 
+order by c.id_commande; 
