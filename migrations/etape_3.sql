@@ -11,5 +11,13 @@ CREATE TABLE commandeDetail (
     quantite INT NOT NULL
 );
 
+
+INSERT INTO commande (dateCommande)
+VALUES ('2026-10-16');
+
+INSERT INTO commandeDetail (id_commande, id_plat, quantite)
+VALUES
+(1, 1, 2),
+(1, 2, 1);
 je place quantite dans commandeDetail pour avoir un prix pour chaque nombre de plat et commande
 
